@@ -1,7 +1,7 @@
 import { FC, useEffect, useRef} from "react";
 import style from "./MessageList.module.css";
 import { Messages } from "src/types";
-import { Chat } from "./../Chat/Chat";
+import { Chats } from "../Chats/Chats";
 
 interface MessageListProps {
   messages: Messages;
@@ -20,7 +20,7 @@ export const MessageList: FC<MessageListProps> = ({ messages }) => {
     <div className={style.wrapper}>
       <div className={style.box}>
         <div>
-          <Chat />
+          <Chats />
         </div>
         <div className={style.box2}>
           <h3 className={style.title}>Сообщения</h3>

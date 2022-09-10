@@ -11,9 +11,7 @@ describe("Form", () => {
     render(<Form addMessage={addMessage} />);
   });
 
-  it('render component', () => {
-
-  });
+  it('render component', () => {});
 
   it('input change with fireevent', () => {
     const inputEl = screen.getByTestId<HTMLInputElement>('input');

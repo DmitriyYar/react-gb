@@ -1,12 +1,13 @@
+import { FC } from "react";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import ListSubheader from "@mui/material/ListSubheader";
 
-type Chat = arrChat[];
+type Chats = arrChats[];
 
-interface arrChat {
+interface arrChats {
   id: number;
   name: string;
 }
@@ -17,22 +18,22 @@ const text = {
   lineHeight: "16px",
 };
 
-export const Chat = () => {
-  const userChat: Chat = [
-    {
-      id: 10,
-      name: "First Chat",
-    },
-    {
-      id: 11,
-      name: "Second Chat",
-    },
-    {
-      id: 12,
-      name: "Third Chat",
-    },
-  ];
+const userChat: Chats = [
+  {
+    id: 10,
+    name: "First Chat",
+  },
+  {
+    id: 11,
+    name: "Second Chat",
+  },
+  {
+    id: 12,
+    name: "Third Chat",
+  },
+];
 
+export const Chats: FC = () => { 
   return (
     <List
       sx={{ width: "150px", height: "100%", maxWidth: 360, bgcolor: "#f3f3f3" }}
