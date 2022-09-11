@@ -26,20 +26,7 @@ describe('Form', () => {
     expect(inputEl.value).toBe('Hello world');
   });
 
-  // it('button click with fireEvent', () => {
-  //   addMessage = jest.fn();
-  //   render(<Form addMessage={addMessage} />);
-
-  //   const input = screen.getByTestId<HTMLInputElement>('input');
-  //   fireEvent.change(input, { target: { value: 'new value' } });
-  //   expect(input.value).toBe('new value');
-
-  //   const button = screen.getByTestId('button');
-  //   fireEvent.click(button);
-  //   expect(addMessage).toHaveBeenCalledTimes(1);
-  // });
-
-  it('activation of the button when the text is entered', () => {
+   it('activation of the button when the text is entered', () => {
     const value = '23';
     const inputEl = screen.getByTestId<HTMLInputElement>('input');
     const inputBtn = screen.getByRole('button');
