@@ -4,13 +4,14 @@ import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import { store } from 'src/store';
 
-describe('Form', () => {
+describe('Profile', () => {
   it('render component Profile', () => {
     render(
       <Provider store={store}>
         <Profile />
       </Provider>
     );
+    screen.debug();
   });
 
   it('Changing the checkbox when the button is pressed', () => {
