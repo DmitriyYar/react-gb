@@ -23,7 +23,6 @@ describe('App', () => {
       </MemoryRouter>
     );
     expect(screen.getByText('404 page')).toBeInTheDocument();
-    screen.debug();
   });
 
   it('send user message', async () => {
@@ -44,7 +43,6 @@ describe('App', () => {
 
     expect(screen.getByText(/Hello, world!/)).toBeInTheDocument();
     expect(screen.getAllByTestId('li').length).toBe(2);
-    screen.debug();
   });
 
   it('bot answer', async () => {

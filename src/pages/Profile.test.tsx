@@ -11,7 +11,6 @@ describe('Profile', () => {
         <Profile />
       </Provider>
     );
-    screen.debug();
   });
 
   it('Changing the checkbox when the button is pressed', () => {
@@ -40,6 +39,5 @@ describe('Profile', () => {
     fireEvent.click(button);
 
     expect(screen.getByTestId('name').innerHTML).toBe('name: new value');
-    screen.debug();
   });
 });
