@@ -35,9 +35,9 @@ describe('Profile', () => {
     const input = screen.getByTestId<HTMLInputElement>('inputName');
     fireEvent.change(input, { target: { value: 'new value' } });
     expect(input.value).toBe('new value');
+
     const button = screen.getByTestId('buttonName');
     fireEvent.click(button);
-
     expect(screen.getByTestId('name').innerHTML).toBe('name: new value');
   });
 });

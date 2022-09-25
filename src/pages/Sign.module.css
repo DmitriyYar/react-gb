@@ -1,4 +1,7 @@
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   min-width: 420px;
   height: 100vh;
   background-color: #f3f3f3;
@@ -8,14 +11,9 @@
   margin: 10px;
 }
 
-.titel {
-  padding-bottom: 15px;
-}
-
-.text {
-  padding-bottom: 15px;
-}
-
-.button {
-  margin-left: 20px;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
 }
