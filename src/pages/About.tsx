@@ -10,8 +10,12 @@ export const About: FC = ({ visible, toggle }: any) => (
   <div className={style.wrapper}>
     <h2 className={style.titel}>About page</h2>
     <p className={style.text}>visible:</p>
-    <input type="checkbox" checked={visible} readOnly />
-    <button onClick={() => toggle()} className={style.button}>
+    <input type="checkbox" checked={visible} readOnly data-testid="input" />
+    <button
+      onClick={() => toggle()}
+      className={style.button}
+      data-testid="button"
+    >
       chang visible
     </button>
   </div>

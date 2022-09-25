@@ -4,6 +4,7 @@ const initialState = {
   name: 'gb',
   visible: true,
   name2: 'ewwe',
+  isAuth: false,
 };
 
 const profileSlice = createSlice({
@@ -19,8 +20,11 @@ const profileSlice = createSlice({
       console.log(state);
       console.log(action);
     },
+    auth: (state, action: PayloadAction<boolean>) => {
+      state.isAuth = action.payload;
+    },
   },
 });
 
-export const { toggleProfile, changeName } = profileSlice.actions;
+export const { toggleProfile, changeName, auth } = profileSlice.actions;
 export const profileReducer = profileSlice.reducer;

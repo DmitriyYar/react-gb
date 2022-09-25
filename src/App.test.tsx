@@ -35,6 +35,17 @@ describe('App', () => {
       </Provider>
     );
 
+    // Ввод логина и пароля
+    const loginIn = screen.getByTestId<HTMLInputElement>('login');
+    await userEvent.type(loginIn, 'gb');
+
+    const passwordIn = screen.getByTestId<HTMLInputElement>('passowrd');
+    await userEvent.type(passwordIn, 'gb');
+
+    const btnLogin = screen.getByTestId('btn-login');
+    await userEvent.click(btnLogin);
+
+    //
     const input = screen.getByTestId<HTMLInputElement>('input');
     await userEvent.type(input, 'Hello, world!');
 
